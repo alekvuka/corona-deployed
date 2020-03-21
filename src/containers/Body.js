@@ -18,11 +18,6 @@ import { connect } from 'react-redux'
 class Body extends Component {
 
   whatToDisplay = () => {
-    // if(this.state.display === "NYC"){
-    //   return <NewYorl/>
-    // }elsif{
-    // }
-    debugger
     switch(this.props.display) {
       case "NYC":
         return <NewYork />

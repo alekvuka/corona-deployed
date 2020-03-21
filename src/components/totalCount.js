@@ -6,28 +6,29 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
-
-import TotalCount from '../components/totalCount.js'
-
+import { useCountUp } from 'react-countup'
+import CountUp from 'react-countup';
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
 
 import { connect } from 'react-redux'
 
 
-class LosAngeles extends Component {
-
+class TotalCount extends Component {
 
 
   render() {
     return (
-      <Container>
-          <Row className="justify-content-md-center">
-            <Col md="auto"> <TotalCount /></Col>
-          </Row>
-      </Container>
+
+        <div>
+        <h1 style={{color: "red", fontSize: "14vw"}}> <span style={{color: "green", fontSize: "10vw"}}>cases:</span> <CountUp end={642} /> </h1>
+
+        </div>
+
+
+
     )
   }
 
@@ -40,4 +41,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(LosAngeles)
+export default connect(mapStateToProps)(TotalCount)
