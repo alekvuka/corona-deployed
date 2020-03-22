@@ -15,13 +15,11 @@ class Footer extends Component {
 
   render() {
     return (
-
           <Row style={{ backgroundColor: "lightpink"}} className="justify-content-md-center">
-            <Col md='auto'>
-              <h5 style={{color: "purple", fontSize: ".80em", textAlign: 'center'}}>This too chall pass! Stay strong &hearts; Made by <a href='http://www.aleksvuk.com' target="_blank">aleks</a></h5>
+            <Col >
+              <h5 style={{color: "purple", fontSize: ".80em", textAlign: 'center', paddingTop:"10px"}}>This too chall pass! Stay strong &hearts; Made by <a href='http://www.aleksvuk.com' target="_blank">aleks</a></h5>
             </Col>
           </Row>
-
     )
   }
 

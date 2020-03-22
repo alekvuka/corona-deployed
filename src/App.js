@@ -12,11 +12,9 @@ class App extends Component  {
   render() {
   return (
     <div>
-      <Router>
           <Header />
           <Body />
           <Footer />
-      </Router>
     </div>
   );}
 }
