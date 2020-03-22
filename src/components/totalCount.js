@@ -23,7 +23,7 @@ class TotalCount extends Component {
     return (
 
         <div>
-        <h1 style={{color: "red", fontSize: "14vw"}}> <span style={{color: "green", fontSize: "10vw"}}>cases:</span> <CountUp end={642} /> </h1>
+        <h1 style={{color: "red", fontSize: "14vw"}}> <span style={{color: "purple", fontSize: "10vw"}}>cases:</span> <CountUp end={642} /> </h1>
 
         </div>
 

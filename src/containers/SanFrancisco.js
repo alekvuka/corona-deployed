@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import TotalChart from '../components/TotalChart.js'
 
 import TotalCount from '../components/totalCount.js'
 
@@ -26,7 +27,10 @@ class SanFrancisco extends Component {
       <div>
       <Container>
           <Row className="justify-content-md-center">
-            <Col md="auto"> <TotalCount /></Col>
+            <Col> <TotalCount /></Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col > <TotalChart /> </Col>
           </Row>
       </Container>
       </div>

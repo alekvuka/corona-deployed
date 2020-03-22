@@ -12,6 +12,7 @@ import TotalCount from '../components/totalCount.js'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import TotalChart from '../components/TotalChart.js'
 
 
 import { connect } from 'react-redux'
@@ -25,7 +26,10 @@ class LosAngeles extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center">
-            <Col md="auto"> <TotalCount /></Col>
+            <Col > <TotalCount /></Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col > <TotalChart /> </Col>
           </Row>
       </Container>
     )

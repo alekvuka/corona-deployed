@@ -1,6 +1,31 @@
 
 export default function ManageCities(state = {
-  cities: ['NYC', 'Seattle', 'LA', 'SF', 'Boston'], display: "NYC",
+  nyc: {
+    totalCases: {},
+    recovered: {},
+    dead: {}
+  },
+  sf: {
+    totalCases: {},
+    recovered: {},
+    dead: {}
+  },
+  boston: {
+    totalCases: {},
+    recovered: {},
+    dead: {}
+  },
+  la: {
+    totalCases: {},
+    recovered: {},
+    dead: {}
+  },
+  seattle: {
+    totalCases: {},
+    recovered: {},
+    dead: {}
+  },
+  display: "NYC",
 }, action) {
    switch (action.type) {
 

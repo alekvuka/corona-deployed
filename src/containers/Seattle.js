@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
+import TotalChart from '../components/TotalChart.js'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -25,7 +26,10 @@ class Seattle extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center">
-            <Col md="auto"> <TotalCount /></Col>
+            <Col > <TotalCount /></Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col > <TotalChart /> </Col>
           </Row>
       </Container>
     )

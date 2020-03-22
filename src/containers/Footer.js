@@ -6,14 +6,22 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 class Footer extends Component {
 
   render() {
     return (
-      <div>
-      </div>
+
+          <Row style={{ backgroundColor: "lightpink"}} className="justify-content-md-center">
+            <Col md='auto'>
+              <h5 style={{color: "purple", fontSize: ".80em", textAlign: 'center'}}>This too chall pass! Stay strong &hearts; Made by <a href='http://www.aleksvuk.com' target="_blank">aleks</a></h5>
+            </Col>
+          </Row>
+
     )
   }
 
