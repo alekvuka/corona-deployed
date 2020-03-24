@@ -8,9 +8,12 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
     "d3-scale-chromatic": "^1.5.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "fibers": "^4.0.2",
     "jquery": "^1.9.1",
     "node-sass": "^4.13.1",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-countup": "^4.3.3",
@@ -30,7 +33,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
