@@ -43,10 +43,10 @@ class TwitterFeed extends Component {
 
     const tweet = <div><TwitterTimelineEmbed
       sourceType="profile"
-      screenName="saurabhnemade"
+      screenName= {this.props.prof}
       noFooter='true'
       noBorder='true'
-      options={{height: 250}}
+      options={{height: 450}}
     /></div>
     //debugger
 

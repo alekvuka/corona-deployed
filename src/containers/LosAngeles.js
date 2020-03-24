@@ -25,12 +25,9 @@ class LosAngeles extends Component {
   render() {
     return (
       <Container>
-          <Row className="justify-content-md-center">
-            <Col > <TotalCount /></Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col > <TotalChart /> </Col>
-          </Row>
+        <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
+          <Col > <h1 style={{color: "red", fontSize: "4vw"}}>coming soon</h1> </Col>
+        </Row>
       </Container>
     )
   }

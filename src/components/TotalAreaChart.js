@@ -26,7 +26,7 @@ const data = [
     name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
   },
   {
-    name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+    name: 'Page C', uv: 2000, pv: 900, amt: 9290,
   },
   {
     name: 'Page D', uv: 2780, pv: 3908, amt: 2000,

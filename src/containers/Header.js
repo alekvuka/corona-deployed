@@ -34,7 +34,7 @@ class Header extends Component {
           <Nav.Link eventKey="link-4" onClick={this.props.displaySeattle}>Seattle</Nav.Link>
         </Nav.Item>
       </Nav>
-    
+
 
     )
   }

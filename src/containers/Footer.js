@@ -17,7 +17,7 @@ class Footer extends Component {
     return (
           <Row style={{ backgroundColor: "lightpink"}} className="justify-content-md-center">
             <Col >
-              <h5 style={{color: "purple", fontSize: ".80em", textAlign: 'center', paddingTop:"10px"}}>This too chall pass! Stay strong &hearts; Made by <a href='http://www.aleksvuk.com' target="_blank">aleks</a></h5>
+              <h5 style={{color: "purple", fontSize: ".80em", textAlign: 'center', paddingTop:"10px"}}>&hearts; made by <a href='http://www.aleksvuk.com' target="_blank">aleks</a></h5>
             </Col>
           </Row>
     )
