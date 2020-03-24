@@ -256,7 +256,7 @@ class NewYork extends Component {
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>live views:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>views:</h1> </Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
