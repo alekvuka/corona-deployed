@@ -35,6 +35,20 @@ class NewsFeed extends Component {
     })
   }
 
+  getArticles = () => {
+      let Parser = require('rss-parser');
+      let parser = new Parser();
+      let newsFeed = parser.parseURL(this.link);
+      //let newsFeedDaily = await parser.parseURL('https://cors-anywhere.herokuapp.com/https://nypost.com/metro/feed/');
+      //debugger
+      //debugger
+      this.setFeed(newsFeed)
+      //console.log(newsFeed)
+      this.setState({
+        feed: newsFeed
+      })
+  }
+
   parseNews = () => {
 
     let list = ""
@@ -87,26 +101,29 @@ class NewsFeed extends Component {
   }
 
   componentDidMount(){
-    debugger
+    //debugger
     let Parser = require('rss-parser');
     let parser = new Parser();
 
     if(this.state.link === "1"){
-      this.link = `https://www.ny1.com/services/contentfeed.nyc%7call-boroughs%7cnews.landing.rss`
+      this.link = `https://cors-anywhere.herokuapp.com/https://www.ny1.com/services/contentfeed.nyc%7call-boroughs%7cnews.landing.rss`
     } else if(this.state.link === "2") {
-      this.link = 'https://nypost.com/metro/feed/'
+      this.link = 'https://cors-anywhere.herokuapp.com/https://nypost.com/metro/feed/'
     } else if(this.state.link === "3"){
-      this.link = 'https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml'
+      this.link = 'https://cors-anywhere.herokuapp.com/https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml'
     } else if(this.state.link === "4"){
-      this.link = 'https://eldiariony.com/categoria/nueva-york/feed/'
+      this.link = 'https://cors-anywhere.herokuapp.com/https://eldiariony.com/categoria/nueva-york/feed/'
     } else if(this.state.link === "5"){
-      this.link = 'https://www.boston.com/tag/local-news/feed'
+      this.link = 'https://cors-anywhere.herokuapp.com/https://www.boston.com/tag/local-news/feed'
     } else if(this.state.link === "6"){
-      this.link = 'https://whdh.com/feed/'
+      this.link = 'https://cors-anywhere.herokuapp.com/https://whdh.com/feed/'
     }
     //debugger
     //debugger
     //this.link = 'https://cors-anywhere.herokuapp.com/https://www.enterprisenews.com/news/community?template=rss&mime=xml'
+    //this.getArticles()
+
+
 
     //debugger
     //let newLink = this.state.link
