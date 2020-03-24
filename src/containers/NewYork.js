@@ -227,7 +227,7 @@ class NewYork extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>stats:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
             <Col > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
@@ -240,11 +240,11 @@ class NewYork extends Component {
             <Col > <CChart data={this.state.casesVsDeaths} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> % cases vs % deaths by age </h5></div>} /> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>tweets:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em", marginBottom:"20px"}}>tweets:</h1> </Col>
           </Row>
           {this.state.displayTweets ? this.getTweets() : ""}
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>news:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col style={{marginBottom:'20px'}} > <NewsFeed link="1"/> </Col>
@@ -256,7 +256,7 @@ class NewYork extends Component {
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>views:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>views:</h1> </Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>

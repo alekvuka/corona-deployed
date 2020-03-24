@@ -226,17 +226,17 @@ class Boston extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>stats:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
             <Col > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases in suffolk county:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>tweets:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>tweets:</h1> </Col>
           </Row>
           {this.state.displayTweets ? this.getTweets() : ""}
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>news:</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col style={{marginBottom:'40px'}} > <NewsFeed link="5"/> </Col>
