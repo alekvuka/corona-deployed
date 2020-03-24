@@ -29,7 +29,7 @@ class NewsFeed extends Component {
   }
 
   setFeed = (newsFeed) => {
-
+    //debugger
     this.setState({
       feed: newsFeed
     })
@@ -37,8 +37,7 @@ class NewsFeed extends Component {
 
   parseNews = () => {
 
-    let list = "RETURNED"
-
+    let list = ""
     if(this.state.feed !== ""){
     list = <div >
           <ListGroup>
@@ -79,9 +78,6 @@ class NewsFeed extends Component {
   //     })
   //   })();
 
-
-
-
   render() {
     return (
       <div>
@@ -91,6 +87,7 @@ class NewsFeed extends Component {
   }
 
   componentDidMount(){
+    debugger
     let Parser = require('rss-parser');
     let parser = new Parser();
 
@@ -107,7 +104,7 @@ class NewsFeed extends Component {
     } else if(this.state.link === "6"){
       this.link = 'https://whdh.com/feed/'
     }
-
+    //debugger
     //debugger
     //this.link = 'https://cors-anywhere.herokuapp.com/https://www.enterprisenews.com/news/community?template=rss&mime=xml'
 
@@ -117,6 +114,7 @@ class NewsFeed extends Component {
     (async () => {
       let newsFeed = await parser.parseURL(this.link);
       //let newsFeedDaily = await parser.parseURL('https://cors-anywhere.herokuapp.com/https://nypost.com/metro/feed/');
+      //debugger
       //debugger
       this.setFeed(newsFeed)
       //console.log(newsFeed)
