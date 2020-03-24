@@ -26,7 +26,7 @@ class TwitterFeed extends Component {
   }
 
   getTweet = () => {
-    return <a class="twitter-timeline" data-height="300" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+    return <a class="twitter-timeline" data-height="300" data-width="300" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
   }
 
   render() {
@@ -46,7 +46,7 @@ class TwitterFeed extends Component {
       screenName= {this.props.prof}
       noFooter='true'
       noBorder='true'
-      options={{height: 450}}
+      options={{height: 450, width: 350}}
     /></div>
     //debugger
 
