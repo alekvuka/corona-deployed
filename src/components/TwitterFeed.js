@@ -46,7 +46,7 @@ class TwitterFeed extends Component {
       screenName= {this.props.prof}
       noFooter='true'
       noBorder='true'
-      options={{height: 450, width: 350}}
+      options={{height: 450}}
     /></div>
     //debugger
 

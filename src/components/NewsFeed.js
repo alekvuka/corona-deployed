@@ -241,7 +241,8 @@ class NewsFeed extends Component {
     super(props)
     this.state = {
       feed: "",
-      link: this.props.link
+      link: this.props.link,
+      loading: true
     }
   }
 
