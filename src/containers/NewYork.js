@@ -104,7 +104,7 @@ class NewYork extends Component {
             name: '03/23', cases: 13119,
           },
           {
-            name: '03/24', cases: 14776,
+            name: '03/24', cases: 15597,
           },
         ],
     dailyCases: [
@@ -175,7 +175,7 @@ class NewYork extends Component {
             name: '03/23', cases: 2359,
           },
           {
-            name: '03/24', cases: 1657,
+            name: '03/24', cases: 2482,
           },
         ],
 
@@ -236,10 +236,10 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 24, 9:45am :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 24, 5:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 24, 9:45am </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 24, 5:00pm </h5></div>} /></Col>
             <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.deathByBorough} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total # of deaths by borough as of March 23 </h5></div>} /></Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
