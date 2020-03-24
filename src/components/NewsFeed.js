@@ -95,17 +95,17 @@ class NewsFeed extends Component {
     let parser = new Parser();
 
     if(this.state.link === "1"){
-      this.link = `https://cors-anywhere.herokuapp.com/https://www.ny1.com/services/contentfeed.nyc%7call-boroughs%7cnews.landing.rss`
+      this.link = `https://www.ny1.com/services/contentfeed.nyc%7call-boroughs%7cnews.landing.rss`
     } else if(this.state.link === "2") {
-      this.link = 'https://cors-anywhere.herokuapp.com/https://nypost.com/metro/feed/'
+      this.link = 'https://nypost.com/metro/feed/'
     } else if(this.state.link === "3"){
-      this.link = 'https://cors-anywhere.herokuapp.com/https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml'
+      this.link = 'https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml'
     } else if(this.state.link === "4"){
-      this.link = 'https://cors-anywhere.herokuapp.com/https://eldiariony.com/categoria/nueva-york/feed/'
+      this.link = 'https://eldiariony.com/categoria/nueva-york/feed/'
     } else if(this.state.link === "5"){
-      this.link = 'https://cors-anywhere.herokuapp.com/https://www.boston.com/tag/local-news/feed'
+      this.link = 'https://www.boston.com/tag/local-news/feed'
     } else if(this.state.link === "6"){
-      this.link = 'https://cors-anywhere.herokuapp.com/https://whdh.com/feed/'
+      this.link = 'https://whdh.com/feed/'
     }
 
     //debugger
