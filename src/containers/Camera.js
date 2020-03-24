@@ -35,7 +35,7 @@ import React, { Component } from 'react'
     render() {
       return (
         <div>
-          <img src={this.state.url} alt="alternate"  />
+          <img width="300px" src={this.state.url} alt="alternate"  />
         </div>
       )
     }

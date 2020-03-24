@@ -229,12 +229,12 @@ class NewYork extends Component {
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
-          <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+          <Row className="justify-content-md-center" style={{marginTop:'20px', }}>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col > <DailyChart data={this.state.dailyCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases </h5></div>} /></Col>
-            <Col > <DailyChart data={this.state.deathByBorough} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total # of deaths by borough </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.deathByBorough} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total # of deaths by borough </h5></div>} /></Col>
           </Row>
           <Row className="justify-content-md-center">
             <Col > <CChart data={this.state.casesVsDeaths} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> % cases vs % deaths by age </h5></div>} /> </Col>
@@ -247,12 +247,12 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col style={{marginBottom:'20px'}} > <NewsFeed link="1"/> </Col>
-            <Col style={{marginBottom:'20px'}} > <NewsFeed link="2"/> </Col>
+            <Col style={{md:'auto', marginBottom:'20px', minWidth:"300px"}} > <NewsFeed link="1"/> </Col>
+            <Col style={{md:'auto', marginBottom:'20px', minWidth:"300px"}} > <NewsFeed link="2"/> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col style={{marginBottom:'40px'}} > <NewsFeed  link="4"/> </Col>
-            <Col style={{marginBottom:'40px'}} > <NewsFeed  link="3"/> </Col>
+            <Col style={{md:'auto', marginBottom:'40px', minWidth:"300px"}} > <NewsFeed  link="4"/> </Col>
+            <Col style={{md:'auto', marginBottom:'40px', minWidth:"300px"}} > <NewsFeed  link="3"/> </Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
@@ -260,11 +260,11 @@ class NewYork extends Component {
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col md= 'auto' style={{marginBottom:'40px'}} > <Camera url="http://207.251.86.238/cctv782.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px'}} > <Camera url="http://207.251.86.238/cctv212.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px'}} > <Camera url="http://207.251.86.238/cctv439.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px'}} > <Camera url="http://207.251.86.238/cctv1004.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px'}} > <Camera url="http://207.251.86.238/cctv26.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv782.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv212.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv439.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv1004.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv26.jpg?rand="/> </Col>
           </Row>
 
 
