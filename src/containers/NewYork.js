@@ -251,8 +251,8 @@ class NewYork extends Component {
             <Col style={{marginBottom:'40px'}} > <NewsFeed link="2"/> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col style={{marginBottom:'40px'}} > <NewsFeed link="4"/> </Col>
-            <Col style={{marginBottom:'40px'}} > <NewsFeed link="3"/> </Col>
+            <Col style={{marginBottom:'40px'}} > <NewsFeed  link="4"/> </Col>
+            <Col style={{marginBottom:'40px'}} > <NewsFeed  link="3"/> </Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
