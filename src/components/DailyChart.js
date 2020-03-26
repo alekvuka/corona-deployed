@@ -22,16 +22,26 @@ import { connect } from 'react-redux'
 class DailyChart extends Component {
 
   render() {
+    //
+    // if(this.props.nm === "borough"){
+    //   let n = "borough"
+    // }else{
+    //   let n = "name"
+    // }
+
+    //debugger
+
+
     return (
       <div>
       {this.props.title}
       <ResponsiveContainer width={'100%'} height={400} >
         <BarChart data={this.props.data} margin={{ top: 0, right: 30, left: 0, bottom: 20 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey={this.props.dataNameX} />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="cases" fill="#8884d8" />
+          <Bar dataKey={this.props.dataNameY} fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
       </div>

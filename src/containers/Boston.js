@@ -21,6 +21,8 @@ import TwitterFeed from '../components/TwitterFeed.js'
 import DailyChart from '../components/DailyChart.js'
 import PChart from '../components/PChart.js'
 import CChart from '../components/CChart.js'
+import CustomPie from '../components/CustomPie.js'
+import { useMediaQuery } from 'react-responsive'
 
 import { connect } from 'react-redux'
 
@@ -231,17 +233,22 @@ class Boston extends Component {
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
             <Col > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases in suffolk county:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
-          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "3em"}}>tweets:</h1> </Col>
-          </Row>
-          {this.state.displayTweets ? this.getTweets() : ""}
-          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
+
+          <Row className="justify-content-md-center"  style={{marginTop:'40px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="5"/> </Col>
             <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="6"/> </Col>
           </Row>
+          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
+            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="7"/> </Col>
+            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="8"/> </Col>
+          </Row>
+          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>tweets:</h1> </Col>
+          </Row>
+          {this.state.displayTweets ? this.getTweets() : ""}
 
       </Container>
     )
@@ -265,6 +272,12 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(Boston)
+
+
+// <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
+//   <Col > <CustomPie /></Col>
+// </Row>
+
 
 
 //textAlign: 'center'

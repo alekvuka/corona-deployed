@@ -106,6 +106,9 @@ class NewYork extends Component {
           {
             name: '03/24', cases: 15597,
           },
+          {
+            name: '03/25', cases: 20011,
+          },
         ],
     dailyCases: [
           {
@@ -177,23 +180,26 @@ class NewYork extends Component {
           {
             name: '03/24', cases: 2482,
           },
+          {
+            name: '03/25', cases: 4414,
+          },
         ],
 
         deathByBorough: [
               {
-                name: 'queens', cases: 40,
+                borough: 'queens', deaths: 92,
               },
               {
-                name: 'brooklyn', cases: 27,
+                borough: 'brooklyn', deaths: 64,
               },
               {
-                name: 'bronx', cases: 28,
+                borough: 'bronx', deaths: 60,
               },
               {
-                name: 'manhattan', cases: 19,
+                borough: 'manhattan', deaths: 43,
               },
               {
-                name: 'staten island', cases: 11,
+                borough: 'staten island', deaths: 21,
               },
             ],
           casesVsDeaths: [
@@ -216,7 +222,7 @@ class NewYork extends Component {
 
   getTweets = () => {
     return <div>
-    <Row className="justify-content-md-center">
+    <Row className="justify-content-md-center" style={{marginBottom:'40px'}}>
       <Col > <TwitterFeed prof={"NYCMayor"} /> </Col>
       <Col > <TwitterFeed prof={"NYGovCuomo"} /> </Col>
       <Col > <TwitterFeed prof={"nycHealthy"}/> </Col>
@@ -236,19 +242,24 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 24, 5:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 25, 5:30pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 24, 5:00pm </h5></div>} /></Col>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.deathByBorough} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total # of deaths by borough as of March 23 </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 25, 5:30pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.deathByBorough} dataNameX="borough" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={280} /> deaths as of March 25, 5:30pm </h5></div>} /></Col>
           </Row>
-          <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col > <CChart data={this.state.casesVsDeaths} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> % cases vs % deaths by age as of March, 23 </h5></div>} /> </Col>
+
+          <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
+            <Col > <h1 style={{color: "red", fontSize: "3em"}}>views:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "3em", marginBottom:"20px"}}>tweets:</h1> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv782.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv212.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv439.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv1004.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv26.jpg?rand="/> </Col>
           </Row>
-          {this.state.displayTweets ? this.getTweets() : ""}
+
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
@@ -265,19 +276,12 @@ class NewYork extends Component {
             <Col style={{md:'auto', marginBottom:'40px', minWidth:"300px"}} > <NewsFeed  link="3"/> </Col>
           </Row>
 
-          <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "3em"}}>views:</h1> </Col>
+
+          <Row className="justify-content-md-center" >
+            <Col > <h1 style={{color: "red", fontSize: "3em", marginBottom:"20px"}}>tweets:</h1> </Col>
           </Row>
 
-          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv782.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv212.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv439.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv1004.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv26.jpg?rand="/> </Col>
-          </Row>
-
-
+            {this.state.displayTweets ? this.getTweets() : ""}
 
       </Container>
     )
@@ -305,3 +309,7 @@ export default connect(mapStateToProps)(NewYork)
 
 //textAlign: 'center'
 //<h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>Chart</h5>
+
+// <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
+//   <Col > <CChart data={this.state.casesVsDeaths} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> % cases vs % deaths by age as of March, 23</h5></div>} /> </Col>
+// </Row>

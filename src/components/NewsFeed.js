@@ -324,7 +324,13 @@ class NewsFeed extends Component {
       this.link = 'https://cors-anywhere.herokuapp.com/https://www.boston.com/tag/local-news/feed'
     } else if(this.state.link === "6"){
       this.link = 'https://cors-anywhere.herokuapp.com/https://whdh.com/feed/'
+    } else  if(this.state.link === "7"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.patriotledger.com/news/state-news?template=rss&mime=xml"
+    } else if (this.state.link === "8"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.lowellsun.com/feed/"
+
     }
+
 
     //debugger
     //this.link = 'https://cors-anywhere.herokuapp.com/https://www.enterprisenews.com/news/community?template=rss&mime=xml'
