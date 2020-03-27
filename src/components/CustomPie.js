@@ -74,7 +74,8 @@ export default class CustomPie extends PureComponent {
   //width = 350
   render() {
     return (
-
+    <div>
+    {this.props.title}
     <ResponsiveContainer width={'100%'} height={350}  >
       <PieChart >
         <Pie
@@ -89,6 +90,7 @@ export default class CustomPie extends PureComponent {
         />
       </PieChart>
     </ResponsiveContainer>
+    </div>
 
     );
   }

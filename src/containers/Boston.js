@@ -39,70 +39,79 @@ class Boston extends Component {
             name: '03/1', cases: 1,
           },
           {
-            name: '03/02', cases: 1,
+            name: '03/02', cases: 2,
           },
           {
-            name: '03/03', cases: 1,
+            name: '03/03', cases: 2,
           },
           {
-            name: '03/04', cases: 1,
+            name: '03/04', cases: 2,
           },
           {
-            name: '03/05', cases: 1,
+            name: '03/05', cases: 3,
           },
           {
-            name: '03/06', cases: 4,
+            name: '03/06', cases: 8,
           },
           {
-            name: '03/07', cases: 4,
+            name: '03/07', cases: 13,
           },
           {
-            name: '03/08', cases: 9,
+            name: '03/08', cases: 28,
           },
           {
-            name: '03/09', cases: 10,
+            name: '03/09', cases: 41,
           },
           {
-            name: '03/10', cases: 20,
+            name: '03/10', cases: 92,
           },
           {
-            name: '03/11', cases: 20,
+            name: '03/11', cases: 95,
           },
           {
-            name: '03/12', cases: 22,
+            name: '03/12', cases: 108,
           },
           {
-            name: '03/13', cases: 26,
+            name: '03/13', cases: 123,
           },
           {
-            name: '03/14', cases: 27,
+            name: '03/14', cases: 138,
           },
           {
-            name: '03/15', cases: 31,
+            name: '03/15', cases: 164,
           },
           {
-            name: '03/16', cases: 36,
+            name: '03/16', cases: 197,
           },
           {
-            name: '03/17', cases: 42,
+            name: '03/17', cases: 218,
           },
           {
-            name: '03/18', cases: 51,
+            name: '03/18', cases: 256,
           },
           {
-            name: '03/19', cases: 72,
+            name: '03/19', cases: 328,
           },
           {
-            name: '03/20', cases: 86,
+            name: '03/20', cases: 413,
           },
           {
-            name: '03/21', cases: 108,
+            name: '03/21', cases: 525,
           },
           {
-            name: '03/22', cases: 126,
+            name: '03/22', cases: 646,
           },
           {
-            name: '03/23', cases: 154,
+            name: '03/23', cases: 777,
+          },
+          {
+            name: '03/24', cases: 1159,
+          },
+          {
+            name: '03/25', cases: 1838,
+          },
+          {
+            name: '03/26', cases: 2417,
           },
         ],
     dailyCases: [
@@ -228,13 +237,14 @@ class Boston extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
+            <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases in suffolk county:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 26 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
 
-          <Row className="justify-content-md-center"  style={{marginTop:'40px'}}>
+
+          <Row className="justify-content-md-center"  style={{marginTop:'35px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
@@ -277,6 +287,10 @@ export default connect(mapStateToProps)(Boston)
 // <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
 //   <Col > <CustomPie /></Col>
 // </Row>
+
+// <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
+//    <Col> <CustomPie title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> # of cases by county as of March 26 4:00pm:</h5></div>}  /></Col>
+//  </Row>
 
 
 
