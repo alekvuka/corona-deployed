@@ -112,6 +112,9 @@ class NewYork extends Component {
           {
             name: '03/26', cases: 23112,
           },
+          {
+            name: '03/27', cases: 25573,
+          },
         ],
     dailyCases: [
           {
@@ -189,6 +192,9 @@ class NewYork extends Component {
           {
             name: '03/26', cases: 3101,
           },
+          {
+            name: '03/27', cases: 2461,
+          },
         ],
 
         deathByBorough: [
@@ -248,10 +254,10 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 26, 5:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 27, 8:00am :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 26, 5:00pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 27, 8:00am </h5></div>} /></Col>
             <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.deathByBorough} dataNameX="borough" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={365} /> deaths as of March 26, 5:00pm </h5></div>} /></Col>
           </Row>
 
