@@ -23,6 +23,8 @@ import PChart from '../components/PChart.js'
 import CChart from '../components/CChart.js'
 import CustomPie from '../components/CustomPie.js'
 import { useMediaQuery } from 'react-responsive'
+import DailyChartPretty from '../components/DailyChartPretty.js'
+import RadarTotal from '../components/RadarTotal.js'
 
 import { connect } from 'react-redux'
 
@@ -119,89 +121,44 @@ class Boston extends Component {
         ],
     dailyCases: [
           {
-            name: '03/2', cases: 0,
+            name: '03/20', deaths: 1,
           },
           {
-            name: '03/03', cases: 1,
+            name: '03/21', deaths: 1,
           },
           {
-            name: '03/04', cases: 1,
+            name: '03/22', deaths: 5,
           },
           {
-            name: '03/05', cases: 0,
+            name: '03/23', deaths: 9,
           },
           {
-            name: '03/06', cases: 2,
+            name: '03/24', deaths: 11,
           },
           {
-            name: '03/07', cases: 3,
+            name: '03/25', deaths: 15,
           },
           {
-            name: '03/08', cases: 5,
+            name: '03/26', deaths: 25,
           },
           {
-            name: '03/09', cases: 2,
-          },
-          {
-            name: '03/10', cases: 11,
-          },
-          {
-            name: '03/11', cases: 7,
-          },
-          {
-            name: '03/12', cases: 21,
-          },
-          {
-            name: '03/13', cases: 35,
-          },
-          {
-            name: '03/14', cases: 49,
-          },
-          {
-            name: '03/15', cases: 48,
-          },
-          {
-            name: '03/16', cases: 84,
-          },
-          {
-            name: '03/17', cases: 195,
-          },
-          {
-            name: '03/18', cases: 459,
-          },
-          {
-            name: '03/19', cases: 1068,
-          },
-          {
-            name: '03/20', cases: 1945,
-          },
-          {
-            name: '03/21', cases: 1730,
-          },
-          {
-            name: '03/22', cases: 2649,
-          },
-          {
-            name: '03/23', cases: 2359,
+            name: '03/27', deaths: 35,
           },
         ],
 
-        deathByBorough: [
-              {
-                name: 'queens', cases: 40,
-              },
-              {
-                name: 'brooklyn', cases: 27,
-              },
-              {
-                name: 'bronx', cases: 28,
-              },
-              {
-                name: 'manhattan', cases: 19,
-              },
-              {
-                name: 'staten island', cases: 11,
-              },
+        casesByCounty: [
+              { name: 'Barnstable', value: 100, fullMark: 150 },
+              { name: 'Berkshire', value: 105, fullMark: 150 },
+              { name: 'Dukes and Nantucket', value: 4, fullMark: 150 },
+              { name: 'Franklin', value: 24, fullMark: 150 },
+              { name: 'Hampden', value: 90, fullMark: 150 },
+                { name: 'Unknown', value: 303, fullMark: 150 },
+              { name: 'Essex', value: 350, fullMark: 150 },
+              { name: 'Norfolk', value: 393, fullMark: 150 },
+              { name: 'Plymouth ', value: 187, fullMark: 150 },
+              { name: 'Suffolk', value: 631, fullMark: 150 },
+              { name: 'Worcester ', value: 219, fullMark: 150 },
+              { name: 'Middlesex ', value: 685, fullMark: 150 },
             ],
           casesVsDeaths: [
             {
@@ -245,9 +202,13 @@ class Boston extends Component {
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
             <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 27, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
-
-
-          <Row className="justify-content-md-center"  style={{marginTop:'35px'}}>
+          <Row  style={{marginTop:'20px'}}>
+              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={35} /> deaths as of March 27, 4:00pm </h5></div>} /></Col>
+          </Row>
+          <Row  style={{marginTop:'20px'}}>
+              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 27 4:00pm:</h5></div>}  /></Col>
+          </Row>
+          <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
@@ -286,6 +247,13 @@ const mapStateToProps = state => {
 
 export default connect(mapStateToProps)(Boston)
 
+
+// <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
+//     <Col> <CustomPie data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> # of cases by county as of March 27 4:00pm:</h5></div>}  /></Col>
+// </Row>
+// <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
+//     <Col> <DailyChartPretty data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> # of cases by county as of March 27 4:00pm:</h5></div>}  /></Col>
+// </Row>
 
 // <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
 //   <Col > <CustomPie /></Col>
