@@ -118,6 +118,9 @@ class Boston extends Component {
           {
             name: '03/27', cases: 3240,
           },
+          {
+            name: '03/27', cases: 4272,
+          },
         ],
     dailyCases: [
           {
@@ -144,21 +147,24 @@ class Boston extends Component {
           {
             name: '03/27', deaths: 35,
           },
+          {
+            name: '03/28', deaths: 44,
+          },
         ],
 
         casesByCounty: [
-              { name: 'Barnstable', value: 100, fullMark: 150 },
-              { name: 'Berkshire', value: 105, fullMark: 150 },
-              { name: 'Dukes and Nantucket', value: 4, fullMark: 150 },
-              { name: 'Franklin', value: 24, fullMark: 150 },
-              { name: 'Hampden', value: 90, fullMark: 150 },
-                { name: 'Unknown', value: 303, fullMark: 150 },
-              { name: 'Essex', value: 350, fullMark: 150 },
-              { name: 'Norfolk', value: 393, fullMark: 150 },
-              { name: 'Plymouth ', value: 187, fullMark: 150 },
-              { name: 'Suffolk', value: 631, fullMark: 150 },
-              { name: 'Worcester ', value: 219, fullMark: 150 },
-              { name: 'Middlesex ', value: 685, fullMark: 150 },
+              { name: 'Barnstable', value: 133, fullMark: 150 },
+              { name: 'Berkshire', value: 119, fullMark: 150 },
+              { name: 'Dukes and Nantucket', value: 8, fullMark: 150 },
+              { name: 'Franklin', value: 32, fullMark: 150 },
+              { name: 'Hampden', value: 183, fullMark: 150 },
+              { name: 'Unknown', value: 356, fullMark: 150 },
+              { name: 'Essex', value: 472, fullMark: 150 },
+              { name: 'Norfolk', value: 490, fullMark: 150 },
+              { name: 'Plymouth ', value: 272, fullMark: 150 },
+              { name: 'Suffolk', value: 843, fullMark: 150 },
+              { name: 'Worcester ', value: 291, fullMark: 150 },
+              { name: 'Middlesex ', value: 842, fullMark: 150 },
             ],
           casesVsDeaths: [
             {
@@ -200,13 +206,13 @@ class Boston extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 27, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 28, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={35} /> deaths as of March 27, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={44} /> deaths as of March 28, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 27 4:00pm:</h5></div>}  /></Col>
+              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 28 4:00pm:</h5></div>}  /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
