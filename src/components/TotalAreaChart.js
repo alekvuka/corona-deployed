@@ -20,7 +20,19 @@ import { connect } from 'react-redux'
 
 
 
+
+
+
+
 class TotalAreaChart extends Component {
+
+  // forNYC = () => {
+  //   return
+  // }
+  //
+  // forBayArea = () => {
+  //   return
+  // }
 
 
   render() {
@@ -33,7 +45,6 @@ class TotalAreaChart extends Component {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-
           <Area type="monotone" dataKey="queens" stackId="1" stroke="red" fill="red" />
           <Area type="monotone" dataKey="brooklyn" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
           <Area type="monotone" dataKey="bronx" stackId="1" stroke="black" fill="black" />

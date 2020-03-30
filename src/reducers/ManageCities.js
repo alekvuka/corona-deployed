@@ -35,10 +35,10 @@ export default function ManageCities(state = {
         display: "NYC",
       }
 
-     case 'DISPLAY_SF':
+     case "DISPLAY_BAYAREA":
      return {
        ...state,
-       display: "SF",
+       display: "BayArea",
      }
 
      case 'DISPLAY_BOSTON':

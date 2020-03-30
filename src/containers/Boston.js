@@ -119,7 +119,10 @@ class Boston extends Component {
             name: '03/27', cases: 3240,
           },
           {
-            name: '03/27', cases: 4272,
+            name: '03/28', cases: 4272,
+          },
+          {
+            name: '03/29', cases: 4955,
           },
         ],
     dailyCases: [
@@ -150,21 +153,26 @@ class Boston extends Component {
           {
             name: '03/28', deaths: 44,
           },
+          {
+            name: '03/29', deaths: 48,
+          },
         ],
 
         casesByCounty: [
-              { name: 'Barnstable', value: 133, fullMark: 150 },
-              { name: 'Berkshire', value: 119, fullMark: 150 },
+              { name: 'Barnstable', value: 148, fullMark: 150 },
+              { name: 'Berkshire', value: 151, fullMark: 150 },
               { name: 'Dukes and Nantucket', value: 8, fullMark: 150 },
-              { name: 'Franklin', value: 32, fullMark: 150 },
-              { name: 'Hampden', value: 183, fullMark: 150 },
-              { name: 'Unknown', value: 356, fullMark: 150 },
-              { name: 'Essex', value: 472, fullMark: 150 },
-              { name: 'Norfolk', value: 490, fullMark: 150 },
-              { name: 'Plymouth ', value: 272, fullMark: 150 },
-              { name: 'Suffolk', value: 843, fullMark: 150 },
-              { name: 'Worcester ', value: 291, fullMark: 150 },
-              { name: 'Middlesex ', value: 842, fullMark: 150 },
+              { name: 'Franklin', value: 41, fullMark: 150 },
+              { name: 'Hampshire', value: 37, fullMark: 150 },
+              { name: 'Hampden', value: 201, fullMark: 150 },
+              { name: 'Bristol', value: 208, fullMark: 150 },
+              { name: 'Unknown', value: 460, fullMark: 150 },
+              { name: 'Essex', value: 570, fullMark: 150 },
+              { name: 'Norfolk', value: 548, fullMark: 150 },
+              { name: 'Plymouth ', value: 325, fullMark: 150 },
+              { name: 'Suffolk', value: 940, fullMark: 150 },
+              { name: 'Worcester ', value: 337, fullMark: 150 },
+              { name: 'Middlesex ', value: 981, fullMark: 150 },
             ],
           casesVsDeaths: [
             {
@@ -206,10 +214,10 @@ class Boston extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 28, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 29, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={44} /> deaths as of March 28, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={48} /> deaths as of March 29, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
               <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 28 4:00pm:</h5></div>}  /></Col>

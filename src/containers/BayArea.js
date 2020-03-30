@@ -18,7 +18,7 @@ import TotalCount from '../components/totalCount.js'
 import { connect } from 'react-redux'
 
 
-class SanFrancisco extends Component {
+class BayArea extends Component {
 
 
 
@@ -43,4 +43,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(SanFrancisco)
+export default connect(mapStateToProps)(BayArea)

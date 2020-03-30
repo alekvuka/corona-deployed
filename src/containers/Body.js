@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 import Boston from './Boston.js'
 import NewYork from './NewYork.js'
 import LosAngeles from './LosAngeles.js'
-import SanFrancisco from './SanFrancisco.js'
+import BayArea from './BayArea.js'
 import Seattle from './Seattle.js'
 import { connect } from 'react-redux'
 
@@ -27,8 +27,8 @@ class Body extends Component {
         return <LosAngeles />
       case "Seattle":
         return <Seattle />
-      case "SF":
-        return <SanFrancisco />
+      case "BayArea":
+        return <BayArea />
       default:
         return ""
     }

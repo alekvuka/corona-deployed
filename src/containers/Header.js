@@ -25,7 +25,7 @@ class Header extends Component {
           <Nav.Link  eventKey="link-1" onClick={this.props.displayBoston}>Massachusetts</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2" onClick={this.props.displaySF}>Bay Area</Nav.Link>
+          <Nav.Link eventKey="link-2" onClick={this.props.displayBayArea}>Bay Area</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3" onClick={this.props.displayLA}>Los Angeles</Nav.Link>
@@ -40,7 +40,7 @@ class Header extends Component {
 
 const mapDispatchToProps = dispatch => ({
   displayNYC: () => dispatch({ type: "DISPLAY_NYC"}),
-  displaySF: () => dispatch({ type: "DISPLAY_SF"}),
+  displayBayArea: () => dispatch({ type: "DISPLAY_BAYAREA"}),
   displayBoston: () => dispatch({ type: "DISPLAY_BOSTON"}),
   displayLA: () => dispatch({ type: "DISPLAY_LA"}),
   displaySeattle: () => dispatch({ type: "DISPLAY_SEATTLE"}),
