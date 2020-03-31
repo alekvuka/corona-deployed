@@ -36,6 +36,7 @@ export default function ManageCities(state = {
       }
 
      case "DISPLAY_BAYAREA":
+      
      return {
        ...state,
        display: "BayArea",

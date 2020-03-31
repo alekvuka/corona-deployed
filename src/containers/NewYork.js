@@ -90,6 +90,14 @@ class NewYork extends Component {
           queens: 253,
           staten_island: 46
         },
+        {
+          name: '03/30',
+          bronx: 215,
+          brooklyn: 216,
+          manhattan: 119,
+          queens: 305,
+          staten_island: 58
+        },
       ],
 
       totalCases: [
@@ -180,6 +188,9 @@ class NewYork extends Component {
           {
             name: '03/29', cases: 33474,
           },
+          {
+            name: '03/29', cases: 38087,
+          },
         ],
     dailyCases: [
           {
@@ -266,6 +277,9 @@ class NewYork extends Component {
           {
             name: '03/29', cases: 2709,
           },
+          {
+            name: '03/30', cases: 4613,
+          },
         ],
 
         deathByBorough: [
@@ -325,11 +339,11 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 29, 5:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 30, 5:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 29, 5:00pm </h5></div>} /></Col>
-            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={776} /> deaths as of March 29, 5:00pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of March 30, 5:00pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={914} /> deaths as of March 30, 5:00pm </h5></div>} /></Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>

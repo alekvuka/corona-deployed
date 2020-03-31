@@ -50,6 +50,18 @@ class TotalAreaChart extends Component {
           <Area type="monotone" dataKey="bronx" stackId="1" stroke="black" fill="black" />
           <Area type="monotone" dataKey="manhattan" stackId="1" stroke="#8884d8" fill="#8884d8" />
           <Area type="monotone" dataKey="staten_island" stackId="1" stroke="violet" fill="violet" />
+
+          <Area type="monotone" dataKey="santa_clara" stackId="1" stroke="red" fill="red" />
+          <Area type="monotone" dataKey="san_francisco" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+          <Area type="monotone" dataKey="alameda" stackId="1" stroke="black" fill="black" />
+          <Area type="monotone" dataKey="contra_costa" stackId="1" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey="marin" stackId="1" stroke="violet" fill="violet" />
+          <Area type="monotone" dataKey="sonoma" stackId="1" stroke="violet" fill="#8884e9"  />
+          <Area type="monotone" dataKey="solano" stackId="1" stroke="violet" fill="#82be9d"  />
+          <Area type="monotone" dataKey="napa" stackId="1" stroke="violet" fill="#72be9d"  />
+
+
+
         </AreaChart>
       </ResponsiveContainer>
       </div>

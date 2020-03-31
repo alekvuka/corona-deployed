@@ -328,8 +328,19 @@ class NewsFeed extends Component {
       this.link = "https://cors-anywhere.herokuapp.com/https://www.patriotledger.com/news/state-news?template=rss&mime=xml"
     } else if (this.state.link === "8"){
       this.link = "https://cors-anywhere.herokuapp.com/https://www.lowellsun.com/feed/"
-
+    } else if (this.state.link === "9"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.eastbayexpress.com/oakland/Rss.xml"
+    } else if (this.state.link === "10"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.mercurynews.com/feed/"
+    } else if (this.state.link === "11"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.marinij.com/feed/"
+    } else if (this.state.link === "12"){
+      this.link = "https://cors-anywhere.herokuapp.com/https://rss.bizjournals.com/feed/004b051d41bbbb8272cff3bdb268fb2daa474c7d/3181?market=sacramento,sanfrancisco,sanjose&selectortype=channel&selectorvalue=1,6,2,3,4,13,17,5,9,10,18,7,11,12,14,15,8,16"
     }
+https://www.marinij.com/feed/
+
+//"https://cors-anywhere.herokuapp.com/https://sfist.com/rss/"
+
 
 
     //debugger

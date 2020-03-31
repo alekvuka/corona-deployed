@@ -20,6 +20,7 @@ class Body extends Component {
   whatToDisplay = () => {
     switch(this.props.display) {
       case "NYC":
+        //debugger
         return <NewYork />
       case "Boston":
         return <Boston />
@@ -28,6 +29,7 @@ class Body extends Component {
       case "Seattle":
         return <Seattle />
       case "BayArea":
+        debugger
         return <BayArea />
       default:
         return ""

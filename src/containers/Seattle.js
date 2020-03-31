@@ -26,7 +26,7 @@ class Seattle extends Component {
     return (
       <Container>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>coming soon</h1> </Col>
+            <Col > <h1 style={{color: "red", fontSize: "4vw"}}>coming ... soon</h1> </Col>
           </Row>
       </Container>
     )
