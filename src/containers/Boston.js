@@ -127,6 +127,9 @@ class Boston extends Component {
           {
             name: '03/30', cases: 5752,
           },
+          {
+            name: '03/30', cases: 6620,
+          },
         ],
     dailyCases: [
           {
@@ -162,23 +165,26 @@ class Boston extends Component {
           {
             name: '03/30', deaths: 57,
           },
+          {
+            name: '03/31', deaths: 89,
+          },
         ],
 
         casesByCounty: [
-              { name: 'Barnstable', value: 173, fullMark: 150 },
-              { name: 'Berkshire', value: 162, fullMark: 150 },
+              { name: 'Barnstable', value: 191, fullMark: 150 },
+              { name: 'Berkshire', value: 171, fullMark: 150 },
               { name: 'Dukes and Nantucket', value: 8, fullMark: 150 },
-              { name: 'Franklin', value: 49, fullMark: 150 },
-              { name: 'Hampshire', value: 46, fullMark: 150 },
-              { name: 'Hampden', value: 255, fullMark: 150 },
-              { name: 'Bristol', value: 263, fullMark: 150 },
-              { name: 'Unknown', value: 489, fullMark: 150 },
-              { name: 'Essex', value: 653, fullMark: 150 },
-              { name: 'Norfolk', value: 628, fullMark: 150 },
-              { name: 'Plymouth ', value: 380, fullMark: 150 },
-              { name: 'Suffolk', value: 1115, fullMark: 150 },
-              { name: 'Worcester ', value: 390, fullMark: 150 },
-              { name: 'Middlesex ', value: 1141, fullMark: 150 },
+              { name: 'Franklin', value: 61, fullMark: 150 },
+              { name: 'Hampshire', value: 69, fullMark: 150 },
+              { name: 'Hampden', value: 354, fullMark: 150 },
+              { name: 'Bristol', value: 306, fullMark: 150 },
+              { name: 'Unknown', value: 333, fullMark: 150 },
+              { name: 'Essex', value: 784, fullMark: 150 },
+              { name: 'Norfolk', value: 738, fullMark: 150 },
+              { name: 'Plymouth ', value: 459, fullMark: 150 },
+              { name: 'Suffolk', value: 1373, fullMark: 150 },
+              { name: 'Worcester ', value: 433, fullMark: 150 },
+              { name: 'Middlesex ', value: 1340, fullMark: 150 },
             ],
           casesVsDeaths: [
             {
@@ -220,13 +226,13 @@ class Boston extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 30, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of March 31, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={48} /> deaths as of March 30, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={48} /> deaths as of March 31, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 30 4:00pm:</h5></div>}  /></Col>
+              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of March 31 4:00pm:</h5></div>}  /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
