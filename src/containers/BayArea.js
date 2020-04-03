@@ -421,6 +421,18 @@ class BayArea extends Component {
           san_francisco: 434,
           santa_clara: 956,
         },
+        {
+          name: '04/2',
+          napa: 18,
+          solano: 54,
+          sonoma: 91,
+          marin: 108,
+          contra_costa: 276,
+          alameda: 396,
+          san_mateo: 453,
+          san_francisco: 450,
+          santa_clara: 1019,
+        },
       ],
     dailyCases: [
           {
@@ -514,7 +526,7 @@ class BayArea extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total cases as of April 1, 5:00pm: <CountUp end={2651} />  </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> total cases as of April 2, 5:00pm: <CountUp end={2865} />  </h5></div>} /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
