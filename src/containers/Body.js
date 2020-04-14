@@ -8,10 +8,13 @@ import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
 
 import Boston from './Boston.js'
+import Conneticut from './Conneticut.js'
 import NewYork from './NewYork.js'
+import NewJersey from './NewJersey.js'
 import LosAngeles from './LosAngeles.js'
 import BayArea from './BayArea.js'
 import Seattle from './Seattle.js'
+import Lousiana from './Lousiana.js'
 import { connect } from 'react-redux'
 
 
@@ -29,8 +32,18 @@ class Body extends Component {
       case "Seattle":
         return <Seattle />
       case "BayArea":
-        debugger
+        //debugger
         return <BayArea />
+      case "CONN":
+        //debugger
+        return <Conneticut />
+      case "LUI":
+        //debugger
+        return <Lousiana />
+  
+      case "NJ":
+        //debugger
+        return <NewJersey />
       default:
         return ""
     }

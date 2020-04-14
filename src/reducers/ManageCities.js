@@ -36,7 +36,7 @@ export default function ManageCities(state = {
       }
 
      case "DISPLAY_BAYAREA":
-      
+
      return {
        ...state,
        display: "BayArea",
@@ -58,6 +58,24 @@ export default function ManageCities(state = {
      return {
        ...state,
        display: "LA",
+     }
+
+     case 'DISPLAY_CONN':
+     return {
+       ...state,
+       display: "CONN",
+     }
+
+     case 'DISPLAY_LUI':
+     return {
+       ...state,
+       display: "LUI",
+     }
+
+     case 'DISPLAY_NJ':
+     return {
+       ...state,
+       display: "NJ",
      }
 
        default:

@@ -336,8 +336,12 @@ class NewsFeed extends Component {
       this.link = "https://cors-anywhere.herokuapp.com/https://www.marinij.com/feed/"
     } else if (this.state.link === "12"){
       this.link = "https://cors-anywhere.herokuapp.com/https://rss.bizjournals.com/feed/004b051d41bbbb8272cff3bdb268fb2daa474c7d/3181?market=sacramento,sanfrancisco,sanjose&selectortype=channel&selectorvalue=1,6,2,3,4,13,17,5,9,10,18,7,11,12,14,15,8,16"
-    }
-https://www.marinij.com/feed/
+    } else if (this.state.link === "13") {
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.latimes.com/california/rss2.0.xml"
+    } else if (this.state.link === "14") {
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.dailynews.com/feed/"
+    } 
+//https://www.marinij.com/feed/
 
 //"https://cors-anywhere.herokuapp.com/https://sfist.com/rss/"
 

@@ -29,7 +29,7 @@ import RadarTotal from '../components/RadarTotal.js'
 import { connect } from 'react-redux'
 
 
-class LosAngeles extends Component {
+class Lousiana extends Component {
 
   constructor(props) {
     super(props)
@@ -297,4 +297,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(LosAngeles)
+export default connect(mapStateToProps)(Lousiana)
