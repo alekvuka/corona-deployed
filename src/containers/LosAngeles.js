@@ -133,6 +133,48 @@ class LosAngeles extends Component {
           {
             name: '4/4', cases: 5277,
           },
+          {
+            name: '4/5', cases: 5940,
+          },
+          {
+            name: '4/6', cases: 6360,
+          },
+          {
+            name: '4/7', cases: 6910,
+          },
+          {
+            name: '4/8', cases: 7530,
+          },
+          {
+            name: '4/9', cases: 7955,
+          },
+          {
+            name: '4/10', cases: 8430,
+          },
+          {
+            name: '4/11', cases: 9192,
+          },
+          {
+            name: '4/12', cases: 9420,
+          },
+          {
+            name: '4/14', cases: 10047,
+          },
+          {
+            name: '4/15', cases: 10596,
+          },
+          {
+            name: '4/16', cases: 10854,
+          },
+          {
+            name: '4/17', cases: 11319,
+          },
+          {
+            name: '4/18', cases: 12021,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
         ],
       death: [
             {
@@ -231,6 +273,51 @@ class LosAngeles extends Component {
             {
               name: '4/4', deaths: 117,
             },
+            {
+              name: '4/5', deaths: 131,
+            },
+            {
+              name: '4/6', deaths: 147,
+            },
+            {
+              name: '4/7', deaths: 169,
+            },
+            {
+              name: '4/8', deaths: 198,
+            },
+            {
+              name: '4/9', deaths: 223,
+            },
+            {
+              name: '4/10', deaths: 241,
+            },
+            {
+              name: '4/11', deaths: 265,
+            },
+            {
+              name: '4/12', deaths: 296,
+            },
+            {
+              name: '4/13', deaths: 320,
+            },
+            {
+              name: '4/14', deaths: 360,
+            },
+            {
+              name: '4/15', deaths: 402,
+            },
+            {
+              name: '4/16', deaths: 455,
+            },
+            {
+              name: '4/17', deaths: 495,
+            },
+            {
+              name: '4/18', deaths: 576,
+            },
+            {
+              name: '4/19', deaths: 600,
+            },
           ],
 
 
@@ -260,10 +347,10 @@ class LosAngeles extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 4, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 19, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 2, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 19, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>

@@ -8,16 +8,11 @@ import Button from 'react-bootstrap/Button'
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux'
 
-
-
 class Header extends Component {
-
-
 
   render() {
     return (
-
-      <Nav  fill variant="tabs" defaultActiveKey="link-5">
+      <Nav fill variant="tabs" defaultActiveKey="link-5">
         <Nav.Item>
           <Nav.Link eventKey="link-5" onClick={this.props.displayNYC}>New York City</Nav.Link>
         </Nav.Item>
@@ -39,13 +34,15 @@ class Header extends Component {
         <Nav.Item>
           <Nav.Link  eventKey="link-1" onClick={this.props.displayBoston}>Massachusetts</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link  eventKey="link-7" onClick={this.props.displayLUI}>Louisiana</Nav.Link>
-        </Nav.Item>
       </Nav>
     )
   }
 }
+
+// <Nav.Item>
+//   <Nav.Link  eventKey="link-7" onClick={this.props.displayLUI}>Louisiana</Nav.Link>
+// </Nav.Item>
+
 
 const mapDispatchToProps = dispatch => ({
   displayNYC: () => dispatch({ type: "DISPLAY_NYC"}),

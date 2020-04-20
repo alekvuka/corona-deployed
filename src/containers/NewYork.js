@@ -122,6 +122,135 @@ class NewYork extends Component {
           queens: 499,
           staten_island: 78
         },
+        {
+          name: '04/3',
+          bronx: 480,
+          brooklyn: 485,
+          manhattan: 215,
+          queens: 590,
+          staten_island: 96
+        },
+        {
+          name: '04/4',
+          bronx: 576,
+          brooklyn: 610,
+          manhattan: 246,
+          queens: 688,
+          staten_island: 118
+        },
+        {
+          name: '04/5',
+          bronx: 627,
+          brooklyn: 688,
+          manhattan: 277,
+          queens: 771,
+          staten_island: 128
+        },
+        {
+          name: '04/6',
+          bronx: 679,
+          brooklyn: 738,
+          manhattan: 302,
+          queens: 876,
+          staten_island: 142
+        },
+        {
+          name: '04/7',
+          bronx: 902,
+          brooklyn: 946,
+          manhattan: 387,
+          queens: 1129,
+          staten_island: 179
+        },
+        {
+          name: '04/8',
+          bronx: 1001,
+          brooklyn: 1185,
+          manhattan: 500,
+          queens: 1344,
+          staten_island: 229
+        },
+        {
+          name: '04/9',
+          bronx: 1135,
+          brooklyn: 1341,
+          manhattan: 554,
+          queens: 1493,
+          staten_island: 254
+        },
+        {
+          name: '04/10',
+          bronx: 1241,
+          brooklyn: 1510,
+          manhattan: 629,
+          queens: 1759,
+          staten_island: 289
+        },
+        {
+          name: '04/11',
+          bronx: 1308,
+          brooklyn: 1618,
+          manhattan: 662,
+          queens: 1848,
+          staten_island: 305
+        },
+        {
+          name: '04/12',
+          bronx: 1400,
+          brooklyn: 1746,
+          manhattan: 710,
+          queens: 1994,
+          staten_island: 330
+        },
+        {
+          name: '04/13',
+          bronx: 1512,
+          brooklyn: 1869,
+          manhattan: 756,
+          queens: 2105,
+          staten_island: 345
+        },
+        {
+          name: '04/14',
+          bronx: 1584,
+          brooklyn: 1954,
+          manhattan: 771,
+          queens: 2179,
+          staten_island: 349
+        },
+        {
+          name: '04/15',
+          bronx: 1749,
+          brooklyn: 2189,
+          manhattan: 927,
+          queens: 2314,
+          staten_island: 369
+        },
+        {
+          name: '04/16',
+          bronx: 1802,
+          brooklyn: 2293,
+          manhattan: 1004,
+          queens: 2402,
+          staten_island: 385
+        },
+        {
+          name: '04/17',
+          bronx: 1917,
+          brooklyn: 2490,
+          manhattan: 1088,
+          queens: 2543,
+          staten_island: 406
+        },
+        {
+          name: '04/18',
+          bronx: 1975,
+          brooklyn: 2606,
+          manhattan: 1148,
+          queens: 2646,
+          staten_island: 432
+        },
+
       ],
 
       totalCases: [
@@ -224,103 +353,199 @@ class NewYork extends Component {
           {
             name: '04/2', cases: 49707,
           },
+          {
+            name: '04/3', cases: 56289,
+          },
+          {
+            name: '04/4', cases: 60850,
+          },
+          {
+            name: '04/5', cases: 64955,
+          },
+          {
+            name: '04/6', cases: 68776,
+          },
+          {
+            name: '04/7', cases: 74601,
+          },
+          {
+            name: '04/8', cases: 80204,
+          },
+          {
+            name: '04/9', cases: 87725,
+          },
+          {
+            name: '04/10', cases: 94409,
+          },
+          {
+            name: '04/11', cases: 98715,
+          },
+          {
+            name: '04/12', cases: 104410,
+          },
+          {
+            name: '04/13', cases: 107263,
+          },
+          {
+            name: '04/14', cases: 111424,
+          },
+          {
+            name: '04/15', cases: 117565,
+          },
+          {
+            name: '04/16', cases: 122148,
+          },
+          {
+            name: '04/17', cases: 126368,
+          },
+          {
+            name: '04/18', cases: 129788,
+          },
         ],
     dailyCases: [
           {
-            name: '03/2', cases: 0,
+            name: '03/2', cases: 1,
           },
           {
-            name: '03/03', cases: 1,
+            name: '03/03', cases: 4,
           },
           {
-            name: '03/04', cases: 1,
+            name: '03/04', cases: 10,
           },
           {
-            name: '03/05', cases: 0,
+            name: '03/05', cases: 2,
           },
           {
-            name: '03/06', cases: 2,
+            name: '03/06', cases: 8,
           },
           {
-            name: '03/07', cases: 3,
+            name: '03/07', cases: 14,
           },
           {
-            name: '03/08', cases: 5,
+            name: '03/08', cases: 20,
           },
           {
-            name: '03/09', cases: 2,
+            name: '03/09', cases: 54,
           },
           {
-            name: '03/10', cases: 11,
+            name: '03/10', cases: 75,
           },
           {
-            name: '03/11', cases: 7,
+            name: '03/11', cases: 157,
           },
           {
-            name: '03/12', cases: 21,
+            name: '03/12', cases: 358,
           },
           {
-            name: '03/13', cases: 35,
+            name: '03/13', cases: 621,
           },
           {
-            name: '03/14', cases: 49,
+            name: '03/14', cases: 643,
           },
           {
-            name: '03/15', cases: 48,
+            name: '03/15', cases: 1028,
           },
           {
-            name: '03/16', cases: 84,
+            name: '03/16', cases: 2106,
           },
           {
-            name: '03/17', cases: 195,
+            name: '03/17', cases: 2391,
           },
           {
-            name: '03/18', cases: 459,
+            name: '03/18', cases: 2895,
           },
           {
-            name: '03/19', cases: 1068,
+            name: '03/19', cases: 3579,
           },
           {
-            name: '03/20', cases: 1945,
+            name: '03/20', cases: 3819,
           },
           {
-            name: '03/21', cases: 1730,
+            name: '03/21', cases: 2477,
           },
           {
-            name: '03/22', cases: 2649,
+            name: '03/22', cases: 2414,
           },
           {
-            name: '03/23', cases: 2359,
+            name: '03/23', cases: 3288,
           },
           {
-            name: '03/24', cases: 2482,
+            name: '03/24', cases: 4134,
           },
           {
-            name: '03/25', cases: 4414,
+            name: '03/25', cases: 4495,
           },
           {
-            name: '03/26', cases: 3101,
+            name: '03/26', cases: 4638,
           },
           {
-            name: '03/27', cases: 3585,
+            name: '03/27', cases: 4691,
           },
           {
-            name: '03/28', cases: 4068,
+            name: '03/28', cases: 3160,
           },
           {
-            name: '03/29', cases: 2709,
+            name: '03/29', cases: 3206,
           },
           {
-            name: '03/30', cases: 4613,
+            name: '03/30', cases: 5650,
           },
           {
-            name: '03/31', cases: 3684,
+            name: '03/31', cases: 4937,
           },
           {
-            name: '04/1', cases: 3936,
+            name: '04/1', cases: 4723,
           },
           {
-            name: '04/2', cases: 4000,
+            name: '04/2', cases: 5460,
+          },
+          {
+            name: '04/3', cases: 4999,
+          },
+          {
+            name: '04/4', cases: 3615,
+          },
+          {
+            name: '04/5', cases: 3433,
+          },
+          {
+            name: '04/6', cases: 5957,
+          },
+          {
+            name: '04/7', cases: 5424,
+          },
+          {
+            name: '04/8', cases: 4639,
+          },
+          {
+            name: '04/9', cases: 3405,
+          },
+          {
+            name: '04/10', cases: 2710,
+          },
+          {
+            name: '04/11', cases: 1392,
+          },
+          {
+            name: '04/12', cases: 1392,
+          },
+          {
+            name: '04/13', cases: 1392,
+          },
+          {
+            name: '04/14', cases: 1392,
+          },
+          {
+            name: '04/15', cases: 1392,
+          },
+          {
+            name: '04/16', cases: 1392,
+          },
+          {
+            name: '04/17', cases: 1292,
+          },
+          {
+            name: '04/18', cases: 1092,
           },
         ],
 
@@ -381,11 +606,11 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 2st, 4:30pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col style={{minWidth:"300px"}} > <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 19th, 6:00pm :</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of April 2st, 4:30pm </h5></div>} /></Col>
-            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={1562} /> deaths as of April 2st, 4:30pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="cases" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> daly new cases as of April 19th, 6:00pm </h5></div>} /></Col>
+            <Col style={{minWidth:"300px"}}  > <TotalAreaChart data={this.state.deathByBoroughArea}  title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <CountUp end={8811} /> deaths as of April 19th, 6:00pm </h5></div>} /></Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'0px'}}>

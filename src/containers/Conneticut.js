@@ -38,198 +38,189 @@ class Conneticut extends Component {
       link1: "https://www.ny1.com/services/contentfeed.nyc%7call-boroughs%7cnews.landing.rss",
     totalCases: [
           {
-            name: '3/4', cases: 7,
+            name: '3/24', cases: 618,
           },
           {
-            name: '3/5', cases: 11,
+            name: '3/25', cases: 883,
           },
           {
-            name: '3/6', cases: 13,
+            name: '3/26', cases: 1012,
           },
           {
-            name: '3/7', cases: 14,
+            name: '3/27', cases: 1291,
           },
           {
-            name: '3/8', cases: 14,
+            name: '3/28', cases: 1524,
           },
           {
-            name: '3/9', cases: 19,
+            name: '3/29', cases: 1993,
           },
           {
-            name: '3/10', cases: 20,
+            name: '3/30', cases: 2517,
           },
           {
-            name: '3/11', cases: 27,
+            name: '3/31', cases: 3128,
           },
           {
-            name: '3/12', cases: 30,
+            name: '4/1', cases: 3557,
           },
           {
-            name: '3/13', cases: 40,
+            name: '4/2', cases: 3824,
           },
           {
-            name: '3/14', cases: 54,
+            name: '4/3', cases: 4914,
           },
           {
-            name: '3/15', cases: 69,
+            name: '4/4', cases: 5276,
           },
           {
-            name: '3/16', cases: 94,
+            name: '4/5', cases: 5675,
           },
           {
-            name: '3/17', cases: 144,
+            name: '4/6', cases: 6906,
           },
           {
-            name: '3/18', cases: 190,
+            name: '4/7', cases: 7781,
           },
           {
-            name: '3/19', cases: 231,
+            name: '4/8', cases: 8781,
           },
           {
-            name: '3/20', cases: 294,
+            name: '4/9', cases: 9784,
           },
           {
-            name: '3/21', cases: 351,
+            name: '4/10', cases: 10538,
           },
           {
-            name: '3/22', cases: 409,
+            name: '4/11', cases: 11510,
           },
           {
-            name: '3/23', cases: 536,
+            name: '4/12', cases: 12035,
           },
           {
-            name: '3/24', cases: 662,
+            name: '4/13', cases: 13381,
           },
           {
-            name: '3/25', cases: 799,
+            name: '4/14', cases: 13989,
           },
           {
-            name: '3/26', cases: 1216,
+            name: '4/15', cases: 14755,
           },
           {
-            name: '3/27', cases: 1465,
+            name: '4/16', cases: 15884,
           },
           {
-            name: '3/28', cases: 1804,
+            name: '4/17', cases: 16809,
           },
           {
-            name: '3/29', cases: 2136,
+            name: '4/18', cases: 17550,
           },
           {
-            name: '3/30', cases: 2474,
-          },
-          {
-            name: '3/31', cases: 3011,
-          },
-          {
-            name: '4/1', cases: 3518,
-          },
-          {
-            name: '4/2', cases: 4045,
-          },
-          {
-            name: '4/3', cases: 4566,
-          },
-          {
-            name: '4/4', cases: 5277,
+            name: '4/19', cases: 17962,
           },
         ],
       death: [
             {
-              name: '3/4', deaths: 0,
+              name: '3/17', deaths: 27,
             },
             {
-              name: '3/5', deaths: 0,
+              name: '3/18', deaths: 68,
             },
             {
-              name: '3/6', deaths: 0,
+              name: '3/19', deaths: 63,
             },
             {
-              name: '3/7', cases: 0,
+              name: '3/20', deaths: 35,
             },
             {
-              name: '3/8', deaths: 0,
+              name: '3/21', deaths: 29,
             },
             {
-              name: '3/9', deaths: 0,
+              name: '3/22', deaths: 104,
             },
             {
-              name: '3/10', deaths: 0,
+              name: '3/23', deaths: 88,
             },
             {
-              name: '3/11', deaths: 1,
+              name: '3/24', deaths: 203,
             },
             {
-              name: '3/12', deaths: 1,
+              name: '3/25', deaths: 257,
             },
             {
-              name: '3/13', deaths: 1,
+              name: '3/26', deaths: 137,
             },
             {
-              name: '3/14', deaths: 1,
+              name: '3/27', deaths: 279,
             },
             {
-              name: '3/15', deaths: 1,
+              name: '3/28', deaths: 233,
             },
             {
-              name: '3/16', deaths: 1,
+              name: '3/29', deaths: 469,
             },
             {
-              name: '3/17', deaths: 1,
+              name: '3/30', deaths: 578,
             },
             {
-              name: '3/18', deaths: 1,
+              name: '3/31', deaths: 557,
             },
             {
-              name: '3/19', deaths: 2,
+              name: '4/1', deaths: 429,
             },
             {
-              name: '3/20', deaths: 2,
+              name: '4/2', deaths: 267,
             },
             {
-              name: '3/21', deaths: 4,
+              name: '4/3', deaths: 1090,
             },
             {
-              name: '3/22', deaths: 5,
+              name: '4/4', deaths: 362,
             },
             {
-              name: '3/23', deaths: 7,
+              name: '4/5', deaths: 399,
             },
             {
-              name: '3/24', deaths: 10,
+              name: '4/6', deaths: 1231,
             },
             {
-              name: '3/25', deaths: 13,
+              name: '4/7', deaths: 875,
             },
             {
-              name: '3/26', deaths: 21,
+              name: '4/8', deaths: 1000,
             },
             {
-              name: '3/27', deaths: 26,
+              name: '4/9', deaths: 1003,
             },
             {
-              name: '3/28', deaths: 32,
+              name: '4/10', deaths: 754,
             },
             {
-              name: '3/29', deaths: 37,
+              name: '4/11', deaths: 972,
             },
             {
-              name: '3/30', deaths: 44,
+              name: '4/12', deaths: 525,
             },
             {
-              name: '3/31', deaths: 54,
+              name: '4/13', deaths: 1346,
             },
             {
-              name: '4/1', deaths: 65,
+              name: '4/14', deaths: 1346,
             },
             {
-              name: '4/2', deaths: 78,
+              name: '4/15', deaths: 1346,
             },
             {
-              name: '4/3', deaths: 89,
+              name: '4/16', deaths: 1346,
             },
             {
-              name: '4/4', deaths: 117,
+              name: '4/17', deaths: 1346,
+            },
+            {
+              name: '4/18', deaths: 1346,
+            },
+            {
+              name: '4/19', deaths: 1346,
             },
           ],
 
@@ -241,9 +232,9 @@ class Conneticut extends Component {
   getTweets = () => {
     return <div>
     <Row className="justify-content-md-center">
-      <Col > <TwitterFeed prof={"MayorOfLA"} /> </Col>
-      <Col > <TwitterFeed prof={"LAPDHQ"} /> </Col>
-      <Col > <TwitterFeed prof={"GavinNewsom"}/> </Col>
+      <Col > <TwitterFeed prof={"GovNedLamont"} /> </Col>
+      <Col > <TwitterFeed prof={"CTGOVERNMENT"} /> </Col>
+      <Col > <TwitterFeed prof={"stamfordmayor"}/> </Col>
     </Row>
     </div>
   }
@@ -260,17 +251,15 @@ class Conneticut extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 4, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 19th, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
-          <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 2, 4:00pm </h5></div>} /></Col>
-          </Row>
+
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="13"/> </Col>
-            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="14"/> </Col>
+            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="16"/> </Col>
+            <Col style={{marginBottom:'40px', minWidth:"300px"}} > <NewsFeed link="17"/> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>tweets:</h1> </Col>
@@ -298,3 +287,8 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(Conneticut)
+
+
+// <Row  style={{marginTop:'20px'}}>
+//     <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 2, 4:00pm </h5></div>} /></Col>
+// </Row>

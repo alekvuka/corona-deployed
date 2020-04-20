@@ -136,6 +136,57 @@ class Boston extends Component {
           {
             name: '04/2', cases: 8966,
           },
+          {
+            name: '04/3', cases: 10402,
+          },
+          {
+            name: '04/4', cases: 11736,
+          },
+          {
+            name: '04/5', cases: 12500,
+          },
+          {
+            name: '04/6', cases: 13837,
+          },
+          {
+            name: '04/7', cases: 15202,
+          },
+          {
+            name: '04/8', cases: 16790,
+          },
+          {
+            name: '04/9', cases: 18941,
+          },
+          {
+            name: '04/10', cases: 20974,
+          },
+          {
+            name: '04/11', cases: 22860,
+          },
+          {
+            name: '04/12', cases: 25475,
+          },
+          {
+            name: '04/13', cases: 26867,
+          },
+          {
+            name: '04/14', cases: 28163,
+          },
+          {
+            name: '04/15', cases: 29918,
+          },
+          {
+            name: '04/16', cases: 32181,
+          },
+          {
+            name: '04/17', cases: 34402,
+          },
+          {
+            name: '04/18', cases: 36372,
+          },
+          {
+            name: '04/19', cases: 38077,
+          },
         ],
     dailyCases: [
           {
@@ -180,23 +231,74 @@ class Boston extends Component {
           {
             name: '04/2', deaths: 154,
           },
+          {
+            name: '04/3', deaths: 192,
+          },
+          {
+            name: '04/4', deaths: 216,
+          },
+          {
+            name: '04/5', deaths: 231,
+          },
+          {
+            name: '04/6', deaths: 260,
+          },
+          {
+            name: '04/7', deaths: 356,
+          },
+          {
+            name: '04/8', deaths: 433,
+          },
+          {
+            name: '04/9', deaths: 503,
+          },
+          {
+            name: '04/10', deaths: 599,
+          },
+          {
+            name: '04/11', deaths: 686,
+          },
+          {
+            name: '04/12', deaths: 756,
+          },
+          {
+            name: '04/13', deaths: 844,
+          },
+          {
+            name: '04/14', deaths: 957,
+          },
+          {
+            name: '04/15', deaths: 1108,
+          },
+          {
+            name: '04/16', deaths: 1245,
+          },
+          {
+            name: '04/17', deaths: 1404,
+          },
+          {
+            name: '04/18', deaths: 1560,
+          },
+          {
+            name: '04/19', deaths: 1706,
+          },
         ],
 
         casesByCounty: [
-              { name: 'Barnstable', value: 283, fullMark: 150 },
-              { name: 'Berkshire', value: 213, fullMark: 150 },
+              { name: 'Barnstable', value: 514, fullMark: 150 },
+              { name: 'Berkshire', value: 360, fullMark: 150 },
               { name: 'Dukes and Nantucket', value: 11, fullMark: 150 },
-              { name: 'Franklin', value: 85, fullMark: 150 },
-              { name: 'Hampshire', value: 102, fullMark: 150 },
-              { name: 'Hampden', value: 546, fullMark: 150 },
-              { name: 'Bristol', value: 424, fullMark: 150 },
-              { name: 'Unknown', value: 270, fullMark: 150 },
-              { name: 'Essex', value: 1039, fullMark: 150 },
-              { name: 'Norfolk', value: 938, fullMark: 150 },
-              { name: 'Plymouth ', value: 621, fullMark: 150 },
-              { name: 'Suffolk', value: 1896, fullMark: 150 },
-              { name: 'Worcester ', value: 667, fullMark: 150 },
-              { name: 'Middlesex ', value: 1870, fullMark: 150 },
+              { name: 'Franklin', value: 155, fullMark: 150 },
+              { name: 'Hampshire', value: 233, fullMark: 150 },
+              { name: 'Hampden', value: 1798, fullMark: 150 },
+              { name: 'Bristol', value: 1335, fullMark: 150 },
+              { name: 'Unknown', value: 506, fullMark: 150 },
+              { name: 'Essex', value: 3594, fullMark: 150 },
+              { name: 'Norfolk', value: 2969, fullMark: 150 },
+              { name: 'Plymouth ', value: 2207, fullMark: 150 },
+              { name: 'Suffolk', value: 5872, fullMark: 150 },
+              { name: 'Worcester ', value: 2246, fullMark: 150 },
+              { name: 'Middlesex ', value: 6254, fullMark: 150 },
             ],
           casesVsDeaths: [
             {
@@ -238,13 +340,13 @@ class Boston extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 2, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 19th, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={154} /> deaths as of April 2, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.dailyCases} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={954} /> deaths as of April 19th, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of April 2 4:00pm:</h5></div>}  /></Col>
+              <Col> <RadarTotal data={this.state.casesByCounty} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center', marginBottom: '20px'}}> # of cases by county as of April 14th 4:00pm:</h5></div>}  /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>

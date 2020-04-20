@@ -340,7 +340,17 @@ class NewsFeed extends Component {
       this.link = "https://cors-anywhere.herokuapp.com/https://www.latimes.com/california/rss2.0.xml"
     } else if (this.state.link === "14") {
       this.link = "https://cors-anywhere.herokuapp.com/https://www.dailynews.com/feed/"
-    } 
+    } else if (this.state.link === "15") {
+      this.link = "https://cors-anywhere.herokuapp.com/http://newjersey.news12.com/?clienttype=rss"
+    } else if (this.state.link === "16") {
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.courant.com/arcio/rss/category/breaking-news/?sort=display_date:desc"
+    } else if (this.state.link === "17") {
+      this.link = "https://cors-anywhere.herokuapp.com/https://www.ctpost.com/rss/feed/News-1331.php"
+    }
+
+    //https://www.courant.com/arcio/rss/category/community/hartford/?sort=display_date:desc
+
+    //http://newjersey.news12.com/?clienttype=rss
 //https://www.marinij.com/feed/
 
 //"https://cors-anywhere.herokuapp.com/https://sfist.com/rss/"
