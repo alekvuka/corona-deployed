@@ -113,43 +113,43 @@ class LosAngeles extends Component {
             name: '3/28', cases: 1804,
           },
           {
-            name: '3/29', cases: 2136,
+            name: '3/29', cases: 5118,
           },
           {
-            name: '3/30', cases: 2474,
+            name: '3/30', cases: 5708,
           },
           {
-            name: '3/31', cases: 3011,
+            name: '3/31', cases: 6328,
           },
           {
-            name: '4/1', cases: 3518,
+            name: '4/1', cases: 6921,
           },
           {
-            name: '4/2', cases: 4045,
+            name: '4/2', cases: 7509,
           },
           {
-            name: '4/3', cases: 4566,
+            name: '4/3', cases: 8271,
           },
           {
-            name: '4/4', cases: 5277,
+            name: '4/4', cases: 8848,
           },
           {
-            name: '4/5', cases: 5940,
+            name: '4/5', cases: 9403,
           },
           {
-            name: '4/6', cases: 6360,
+            name: '4/6', cases: 9895,
           },
           {
-            name: '4/7', cases: 6910,
+            name: '4/7', cases: 10592,
           },
           {
-            name: '4/8', cases: 7530,
+            name: '4/8', cases: 11174,
           },
           {
-            name: '4/9', cases: 7955,
+            name: '4/9', cases: 11756,
           },
           {
-            name: '4/10', cases: 8430,
+            name: '4/10', cases: 12323,
           },
           {
             name: '4/11', cases: 9192,
@@ -171,6 +171,96 @@ class LosAngeles extends Component {
           },
           {
             name: '4/18', cases: 12021,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
+          },
+          {
+            name: '4/19', cases: 12341,
           },
           {
             name: '4/19', cases: 12341,
