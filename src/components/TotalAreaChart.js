@@ -40,7 +40,7 @@ class TotalAreaChart extends Component {
       <div>
       {this.props.title}
       <ResponsiveContainer width={'100%'} height={400} >
-        <AreaChart width={500} height={400} data={this.props.data} margin={{top: 0, right: 30, left: 0, bottom: 20}}>
+        <AreaChart width={500} height={400} data={this.props.data} margin={{top: 0, right: 0, left: 10, bottom: 20}}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
