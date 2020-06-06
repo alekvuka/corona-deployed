@@ -490,7 +490,7 @@ class LosAngeles extends Component {
             {
               name: '4/30', deaths: 1111,
             },
-          
+
             {
               name: '5/1', deaths: 1172,
             },
@@ -630,7 +630,7 @@ class LosAngeles extends Component {
             <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of June 4th, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
-              <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 19, 4:00pm </h5></div>} /></Col>
+              <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={2531} /> deaths as of April 19, 4:00pm </h5></div>} /></Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>news:</h1> </Col>
