@@ -113,43 +113,43 @@ class LosAngeles extends Component {
             name: '3/28', cases: 1804,
           },
           {
-            name: '3/29', cases: 5118,
+            name: '3/29', cases: 2136,
           },
           {
-            name: '3/30', cases: 5708,
+            name: '3/30', cases: 2474,
           },
           {
-            name: '3/31', cases: 6328,
+            name: '3/31', cases: 3011,
           },
           {
-            name: '4/1', cases: 6921,
+            name: '4/1', cases: 3518,
           },
           {
-            name: '4/2', cases: 7509,
+            name: '4/2', cases: 4045,
           },
           {
-            name: '4/3', cases: 8271,
+            name: '4/3', cases: 4566,
           },
           {
-            name: '4/4', cases: 8848,
+            name: '4/4', cases: 5277,
           },
           {
-            name: '4/5', cases: 9403,
+            name: '4/5', cases: 5940,
           },
           {
-            name: '4/6', cases: 9895,
+            name: '4/6', cases: 6360,
           },
           {
-            name: '4/7', cases: 10592,
+            name: '4/7', cases: 6910,
           },
           {
-            name: '4/8', cases: 11174,
+            name: '4/8', cases: 7530,
           },
           {
-            name: '4/9', cases: 11756,
+            name: '4/9', cases: 7955,
           },
           {
-            name: '4/10', cases: 12323,
+            name: '4/10', cases: 8430,
           },
           {
             name: '4/11', cases: 9192,
@@ -176,95 +176,144 @@ class LosAngeles extends Component {
             name: '4/19', cases: 12341,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/20', cases: 13816,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/21', cases: 15140,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/22', cases: 16435,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/23', cases: 17508,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/24', cases: 18517,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/25', cases: 19107,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/26', cases: 19528,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/27', cases: 20417,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/28', cases: 20976,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/29', cases: 22485,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '4/30', cases: 23182,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/1', cases: 24215,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/2', cases: 24894,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/3', cases: 25662,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/4', cases: 26217,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/5', cases: 27815,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/6', cases: 28644,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/7', cases: 29427,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/8', cases: 30296,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/9', cases: 31197,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/10', cases: 31667,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/11', cases: 32258,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/12', cases: 33180,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/13', cases: 34428,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/14', cases: 35329,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/15', cases: 36259,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/16', cases: 37303,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/17', cases: 38451,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/18', cases: 39573,
           },
           {
-            name: '4/19', cases: 12341,
+            name: '5/19', cases: 39573,
           },
+          {
+            name: '5/20', cases: 40857,
+          },
+          {
+            name: '5/21', cases: 42037,
+          },
+          {
+            name: '5/22', cases: 43052,
+          },
+          {
+            name: '5/23', cases: 44055,
+          },
+          {
+            name: '5/24', cases: 44988,
+          },
+          {
+            name: '5/25', cases: 46018,
+          },
+          {
+            name: '5/26', cases: 47822,
+          },
+          {
+            name: '5/27', cases: 48700,
+          },
+          {
+            name: '5/28', cases: 49774,
+          },
+          {
+            name: '5/29', cases: 51562,
+          },
+          {
+            name: '5/30', cases: 53651,
+          },
+          {
+            name: '5/31', cases: 54996,
+          },
+          {
+            name: '6/1', cases: 55968,
+          },
+          {
+            name: '6/2', cases: 57118,
+          },
+          {
+            name: '6/3', cases: 58234,
+          },
+          {
+            name: '6/4', cases: 59650,
+          },
+
         ],
       death: [
             {
@@ -408,6 +457,147 @@ class LosAngeles extends Component {
             {
               name: '4/19', deaths: 600,
             },
+            {
+              name: '4/20', deaths: 617,
+            },
+            {
+              name: '4/21', deaths: 663,
+            },
+            {
+              name: '4/22', deaths: 729,
+            },
+            {
+              name: '4/23', deaths: 797,
+            },
+            {
+              name: '4/24', deaths: 848,
+            },
+            {
+              name: '4/25', deaths: 895,
+            },
+            {
+              name: '4/26', deaths: 913,
+            },
+            {
+              name: '4/27', deaths: 942,
+            },
+            {
+              name: '4/28', deaths: 1000,
+            },
+            {
+              name: '4/29', deaths: 1026,
+            },
+            {
+              name: '4/30', deaths: 1111,
+            },
+          
+            {
+              name: '5/1', deaths: 1172,
+            },
+            {
+              name: '5/2', deaths: 1209,
+            },
+            {
+              name: '5/3', deaths: 1229,
+            },
+            {
+              name: '5/4', deaths: 1259,
+            },
+            {
+              name: '5/5', deaths: 1313,
+            },
+            {
+              name: '5/6', deaths: 1367,
+            },
+            {
+              name: '5/7', deaths: 1418,
+            },
+            {
+              name: '5/8', deaths: 1468,
+            },
+            {
+              name: '5/9', deaths: 1512,
+            },
+            {
+              name: '5/10', deaths: 1530,
+            },
+            {
+              name: '5/11', deaths: 1569,
+            },
+            {
+              name: '5/12', deaths: 1613,
+            },
+            {
+              name: '5/13', deaths: 1659,
+            },
+            {
+              name: '5/14', deaths: 1709,
+            },
+            {
+              name: '5/15', deaths: 1755,
+            },
+            {
+              name: '5/16', deaths: 1793,
+            },
+            {
+              name: '5/17', deaths: 1821,
+            },
+            {
+              name: '5/18', deaths: 1839,
+            },
+            {
+              name: '5/19', deaths: 1913,
+            },
+            {
+              name: '5/20', deaths: 1970,
+            },
+            {
+              name: '5/21', deaths: 2016,
+            },
+            {
+              name: '5/22', deaths: 2049,
+            },
+            {
+              name: '5/23', deaths: 2090,
+            },
+            {
+              name: '5/24', deaths: 2104,
+            },
+            {
+              name: '5/25', deaths: 2116,
+            },
+            {
+              name: '5/26', deaths: 2143,
+            },
+            {
+              name: '5/27', deaths: 2195,
+            },
+            {
+              name: '5/28', deaths: 2241,
+            },
+            {
+              name: '5/29', deaths: 2290,
+            },
+            {
+              name: '5/30', deaths: 2338,
+            },
+            {
+              name: '5/31', deaths: 2362,
+            },
+            {
+              name: '6/1', deaths: 2384,
+            },
+            {
+              name: '6/2', deaths: 2443,
+            },
+            {
+              name: '6/3', deaths: 2489,
+            },
+            {
+              name: '6/4', deaths: 2531,
+            },
+
+
           ],
 
 
@@ -437,7 +627,7 @@ class LosAngeles extends Component {
             <Col> <h1 style={{color: "red", fontSize: "3em"}}>stats:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center" style={{marginTop:'20px'}}>
-            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of April 19, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
+            <Col> <TotalChart data={this.state.totalCases} title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}> <span style={{color: "purple", fontSize: "1em"}}>total cases as of June 4th, 4:00pm:</span> <CountUp end={this.state.totalCases.slice(-1)[0].cases} /></h5></div>}/> </Col>
           </Row>
           <Row  style={{marginTop:'20px'}}>
               <Col>  <DailyChart data={this.state.death} dataNameX="name" dataNameY="deaths" title={<div><h5 style={{color: "purple", fontSize: "1em", textAlign: 'center'}}>  <CountUp end={177} /> deaths as of April 19, 4:00pm </h5></div>} /></Col>
