@@ -894,11 +894,11 @@ class NewYork extends Component {
             <Col > <h1 style={{color: "red", fontSize: "3em"}}>views:</h1> </Col>
           </Row>
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv782.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv212.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv439.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv1004.jpg?rand="/> </Col>
-            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="http://207.251.86.238/cctv26.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="https://jpg.nyctmc.org/cctv782.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="https://jpg.nyctmc.org/cctv212.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="https://jpg.nyctmc.org/cctv439.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="https://jpg.nyctmc.org/cctv1004.jpg?rand="/> </Col>
+            <Col md='auto' style={{marginBottom:'40px', minWidth:"300px"}} > <Camera url="https://jpg.nyctmc.org/cctv26.jpg?rand="/> </Col>
           </Row>
 
           <Row className="justify-content-md-center"  style={{marginTop:'20px'}}>
