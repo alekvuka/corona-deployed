@@ -11,7 +11,6 @@ import React, { Component } from 'react'
       this.state = {
         url: props.url + Math.random()
       }
-
     }
 
     updateImage = () => {
